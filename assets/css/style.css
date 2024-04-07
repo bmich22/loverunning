@@ -27,7 +27,7 @@ header {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -50,7 +50,7 @@ h1 {
 }
 
 #menu li {
-    margin-bottom:1em;
+    margin-bottom: 1em;
 }
 
 .active {
@@ -59,19 +59,19 @@ h1 {
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position:absolute;
+    position: absolute;
     background-color: white;
-    width:100%;
-    left:0;
-    padding:0 1rem;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    display:none;
-    top:100%;
+    display: none;
+    top: 100%;
 }
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
-    display:block;
+    display: block;
 }
 
 #nav-toggle {
@@ -81,7 +81,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-    
+
 
 
 /* Main Content */
@@ -99,6 +99,7 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -109,7 +110,7 @@ footer {
     }
 
     #menu {
-        display:flex;
+        display: flex;
     }
 
     #menu li {
@@ -117,11 +118,11 @@ footer {
     }
 
     .nav-toggle-label {
-        display:none;
+        display: none;
     }
 
     #logo {
-        font-size:280%;
+        font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
@@ -129,6 +130,13 @@ footer {
     /* Main content */
     main {
         /* Push main content down to accomodate larger header */
-        margin-top:79px;
+        margin-top: 79px;
+    }
+}
+
+/* Large devices: laptops and desktops (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
 }
