@@ -88,6 +88,28 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+
+    #reasons {
+        width:90%;
+        margin: 20px auto;
+    }
+
+    #reasons h2 {
+        font-size:280%;
+        margin-bottom: 20px;
+        text-align:center;
+    }
+
+    #benefits-physical>div, #benefits-mental>div {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    #benefits p {
+        padding-left: 20px;
+        padding-right:20px;
+    }
+     
 }
 
 /* Hero section */
